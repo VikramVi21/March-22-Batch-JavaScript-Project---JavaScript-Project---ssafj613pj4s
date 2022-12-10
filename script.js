@@ -108,10 +108,10 @@ function addNumber(){
         
         // alert("wrong");
     }
-    // if(error>2){
-    //     alert("You lost");
-    //     location.reload();
-    // }
+    if(error>2){
+        alert("You lost");
+        location.reload();
+    }
 
     if(isAllFilled()){
         // alert("not empty");
