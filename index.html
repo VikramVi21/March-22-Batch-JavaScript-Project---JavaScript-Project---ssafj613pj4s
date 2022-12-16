@@ -8,25 +8,27 @@
     <title>Suduko Game</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Old English Text MT">
+
 </head>
 
 <body>
     <div class="container">
         <h1>Suduko</h1>
+        
         <div class="mistake">Mistake: <span id="mistake">0</span>/3</div>
 
-        <!-- 9x9 board -->
-        <div id="gameBoard">
-            
+        <div class="gameSection">
+            <!-- 9x9 board -->
+            <div id="gameBoard"> </div>
+            <div class="applySection">
+                <div id="digit"></div>
+                <div id="delete">
+                    <i class="fa fa-trash"></i>
+                </div>
+            </div>
         </div>
-        <div id="digit">
-            
 
-        </div>
-        <div id="delete">
-            <i class="fa fa-trash"></i>
-        </div>
     </div>
 
     <script src="./script.js"></script>

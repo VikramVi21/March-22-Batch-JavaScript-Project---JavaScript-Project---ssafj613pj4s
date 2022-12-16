@@ -1,7 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
+    background-image: linear-gradient(direction, color-stop1, color-stop2, );
   }
 .container{
     height: 100vh;
@@ -9,9 +12,23 @@
     text-align: center;
 
 }
+
+
+
+
+.gameSection{
+    width: 710px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
 .container h1{
     font-size: 40px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    letter-spacing:40px ;
+    text-decoration: underline;
+    font-family: "Old English Text MT";
     
 }
 .mistake{
@@ -19,7 +36,7 @@
     background: green;
     padding: 10px;
     /* padding: 10px; */
-    width: 425px;
+    width: 225px;
     font-size: 24px;
     margin:10px auto;
     color: aliceblue;
@@ -27,7 +44,7 @@
     border: 2px solid black;
 }
 #gameBoard{
-    width: 425px;
+    width: 430px;
     height: 450px;
     /* background-color: yellow; */
     margin: 0 auto;
@@ -46,6 +63,10 @@
     align-items: center;
 }
 
+.applySection{
+    padding: 5px;
+}
+
 .filled{
     background: #f2f2f2;
 
@@ -54,17 +75,25 @@
     background: #f19494;
 }
 #digit{
-    width: 450px;
-    display: flex;
-    margin:20px  auto;
+    /* width: 150px; */
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 5px;
+    /* margin: auto; */
 }
 #digit .tile{
-    background: aqua;
+    background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 35%, rgba(9,26,121,1) 100%);
     border-radius: 10px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    font-size: 30px;
     color: #ffff;
     cursor: pointer;
-    height: 50px;
+    height: 60px;
+    width: 60px;
 
 }
 .border-right{
@@ -78,7 +107,7 @@
 
 #delete{
     color:  red;
-    font-size: 30px;
+    font-size: 150px;
     cursor: pointer;
 }
 .danger{
